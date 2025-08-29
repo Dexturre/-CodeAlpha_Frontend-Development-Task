@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="architecture">Architecture</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1018/300/200" alt="Nature 1" />
+    </div>
+    <div class="gallery-item" data-category="architecture">
+      <img src="https://picsum.photos/id/1025/300/200" alt="Architecture 1" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/id/1005/300/200" alt="People 1" />
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/300/200" alt="Nature 2" />
+    </div>
+    <div class="gallery-item" data-category="architecture">
+      <img src="https://picsum.photos/id/1031/300/200" alt="Architecture 2" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://picsum.photos/id/1001/300/200" alt="People 2" />
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="" />
+    <div class="lightbox-controls">
+      <button id="prevBtn">&#10094; Prev</button>
+      <button id="nextBtn">Next &#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
